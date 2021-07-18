@@ -6,6 +6,7 @@ module.exports = {
 	entry: {
 		index: './src/index.js',
 		header: './src/header.js',
+		// about:
 	},
 	devtool: 'inline-source-map',
 	devServer: {

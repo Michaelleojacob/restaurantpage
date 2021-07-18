@@ -15,20 +15,20 @@ button {
 	flex-direction: column;
 	grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
 	grid-template-rows: [frow] 1fr [srow] 1fr;
-	grid-gap: 1px;
-	background: #006466;
-	opacity: 70%;
-	color: white;
+	border-radius: 5px;
+	background: linear-gradient(#e66465, #9198e5);
 }
+
 .btoast {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 40px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	grid-column: 1 / 4;
 	margin-top: 5%;
-	background: inherit;
+	color: black;
+	font-weight: 900;
+	/* background: inherit; */
 }
 .bwrap {
 	display: flex;
@@ -36,17 +36,18 @@ button {
 	align-items: center;
 	grid-column: 1 / 4;
 	grid-row: 2;
-	background: inherit;
+	/* background: inherit; */
 }
 
 .btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
 	border: none;
 	text-decoration: none;
 	font-size: 35px;
 	margin-left: 4%;
 	margin-right: 4%;
+	color: black;
+	font-weight: 900;
 }
