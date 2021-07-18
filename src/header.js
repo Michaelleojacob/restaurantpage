@@ -9,7 +9,6 @@ export default function header() {
 				this.headwrapper();
 				this.restaurantName();
 				this.buttonwrap();
-				// this.buttonOne();
 			},
 			cacheDom: function () {
 				this.content = document.querySelector('#content');

@@ -20,6 +20,7 @@ button {
 	grid-template-rows: [frow] 1fr [srow] 1fr;
 	grid-gap: 1px;
 	background: #006466b0;
+	opacity: 70%;
 	color: white;
 }
 .btoast {
@@ -29,18 +30,24 @@ button {
 	font-size: 40px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	grid-column: 1 / 4;
+	margin-top: 5%;
 }
 .bwrap {
 	display: flex;
-	/* display: grid; */
+	justify-content: center;
+	align-items: center;
 	grid-column: 1 / 4;
 	grid-row: 2;
-	justify-content: space-evenly;
 }
 
 .btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: white;
 	border: none;
 	text-decoration: none;
 	font-size: 35px;
+	margin-left: 4%;
+	margin-right: 4%;
 }
