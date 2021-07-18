@@ -4,3 +4,5 @@ import about from './about';
 
 header();
 about();
+
+// const content = document.querySelector('')

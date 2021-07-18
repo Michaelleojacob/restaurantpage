@@ -7,14 +7,10 @@ button {
 
 .hwrapper {
 	display: flex;
-	display: grid;
-	height: 20vh;
 	width: 100%;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
-	grid-template-rows: [frow] 1fr [srow] 1fr;
 	border-radius: 5px;
 	background: linear-gradient(#e66465, #9198e5);
 }
@@ -25,18 +21,13 @@ button {
 	justify-content: center;
 	font-size: 40px;
 	grid-column: 1 / 4;
-	margin-top: 5%;
 	color: black;
 	font-weight: 900;
-	/* background: inherit; */
 }
 .bwrap {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	grid-column: 1 / 4;
-	grid-row: 2;
-	/* background: inherit; */
 }
 
 .btn {
