@@ -16,6 +16,9 @@ export default function myAbout() {
 				this.container = document.createElement('div');
 				this.container.classList.add('aboutcontainer');
 				this.content.appendChild(this.container);
+				this.renderContent();
+			},
+			renderContent: function () {
 				this.firstspan();
 				this.secondspan();
 				this.imagediv();

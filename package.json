@@ -13,6 +13,7 @@
 		"type": "git",
 		"url": "git+https://github.com/Michaelleojacob/restaurantpage.git"
 	},
+	"types": "node",
 	"keywords": [],
 	"author": "",
 	"license": "ISC",

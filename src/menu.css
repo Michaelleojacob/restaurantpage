@@ -1,0 +1,18 @@
+.mwrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	border: 5px solid white;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1vh;
+	height: 650px;
+	max-height: 650px;
+}
+
+.itemCard {
+	background: cornflowerblue;
+	margin: 1%;
+	text-align: center;
+}

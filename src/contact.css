@@ -1,0 +1,29 @@
+.conwrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: center;
+	height: 60vh;
+	margin-top: 1vh;
+	max-height: 600px;
+	font-size: 30px;
+}
+
+.cultext {
+	margin: 0vh auto 0vh auto;
+}
+.phone {
+	margin: 1vh auto 1vh auto;
+}
+.address {
+	margin: 1vh auto 1vh auto;
+}
+
+.culdesac {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	max-height: 50vh;
+	max-width: 50vh;
+	margin: 1vh auto 1vh auto;
+}
