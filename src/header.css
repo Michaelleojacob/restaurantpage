@@ -42,3 +42,7 @@ button {
 	color: black;
 	font-weight: 900;
 }
+
+.btn:hover {
+	opacity: 50%;
+}

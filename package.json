@@ -21,6 +21,7 @@
 	},
 	"homepage": "https://github.com/Michaelleojacob/restaurantpage#readme",
 	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^5.15.3",
 		"css-loader": "^6.1.0",
 		"html-webpack-plugin": "^5.3.2",
 		"style-loader": "^3.1.0",
