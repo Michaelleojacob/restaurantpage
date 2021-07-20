@@ -14,7 +14,7 @@ export default function myMenu() {
 				this.cacheDom();
 			},
 			cacheDom: function () {
-				this.content = document.querySelector('#content');
+				this.content = document.querySelector('.appendContentHere');
 				this.menuwrapper();
 			},
 			menuwrapper: function () {

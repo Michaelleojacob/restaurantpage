@@ -1,5 +1,5 @@
 import './about.css';
-import slyEd from './ededdneddy/slyed.jpg';
+import wait from './ededdneddy/wait.png';
 
 export default function myAbout() {
 	'use strict';
@@ -10,7 +10,7 @@ export default function myAbout() {
 				this.aboutSelection();
 			},
 			cacheDom: function () {
-				this.content = document.querySelector('#content');
+				this.content = document.querySelector('.appendContentHere');
 			},
 			aboutSelection: function () {
 				this.container = document.createElement('div');
@@ -40,8 +40,8 @@ export default function myAbout() {
 			},
 			imagediv: function () {
 				this.idiv = new Image();
-				this.idiv.src = slyEd;
-				this.idiv.classList.add('slyEd');
+				this.idiv.src = wait;
+				this.idiv.classList.add('wait');
 				this.container.appendChild(this.idiv);
 			},
 			thirdspan: function () {

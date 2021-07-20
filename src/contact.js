@@ -9,7 +9,7 @@ export default function contactMe() {
 				this.cacheDom();
 			},
 			cacheDom: function () {
-				this.content = document.querySelector('#content');
+				this.content = document.querySelector('.appendContentHere');
 				this.contactwrapper();
 			},
 			contactwrapper: function () {
