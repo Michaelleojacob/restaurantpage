@@ -1,42 +1,45 @@
 .mwrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 1vh;
-	margin-bottom: 5%;
-}
-.mwrapper > div {
-	background: rgba(63, 72, 88, 0.37);
-	margin: 0.5px;
-	border-radius: 5px;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto;
+	text-align: center;
 	margin: 1%;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
 }
 
 .itemCard {
+	margin: 1.5%;
+	background: rgba(63, 72, 88, 0.37);
 	width: 300px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	flex-direction: column;
-	font-size: 22px;
+	height: 355px;
+	/* max-width: 300px; */
+}
+
+.itemCard:hover {
+	opacity: 75%;
 }
 .title {
-	font-size: 26px;
-	font-weight: 500;
+	margin: 1%;
+	font-size: 28px;
 }
 
 .imgicon {
 	height: 250px;
 	width: 250px;
 	border-radius: 50%;
+	margin: 1%;
 }
 
 .itemDesc {
-	margin-bottom: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+	margin: 1%;
+	font-size: 22px;
 }
+
+@media screen and (min-width: 608px) {
+	.mwrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+} ;

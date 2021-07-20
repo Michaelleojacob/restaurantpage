@@ -31,11 +31,6 @@ export default function myMenu() {
 				this.menuItem5();
 				this.menuItem6();
 			},
-			makeItemCard: function () {
-				this.itemCard = document.createElement('div');
-				this.itemCard.classList.add('itemCard');
-				this.mwrapper.appendChild(this.itemCard);
-			},
 			menuItem1: function () {
 				this.item1 = document.createElement('div');
 				this.item1.classList.add('itemCard', 'item1');
@@ -67,8 +62,7 @@ export default function myMenu() {
 				this.item2.appendChild(this.icon);
 				this.itemDesc = document.createElement('div');
 				this.itemDesc.classList.add('itemDesc');
-				this.itemDesc.textContent =
-					'Extremely greasy and constantly dribbling sauce. You may need to eat it with a staw';
+				this.itemDesc.textContent = 'Greasy, overflowing with sauce';
 				this.item2.appendChild(this.itemDesc);
 			},
 			menuItem3: function () {
@@ -85,8 +79,7 @@ export default function myMenu() {
 				this.item3.appendChild(this.icon);
 				this.itemDesc = document.createElement('div');
 				this.itemDesc.classList.add('itemDesc');
-				this.itemDesc.textContent =
-					'Cereal, comes with a prize inside! Low in fat';
+				this.itemDesc.textContent = 'Cereal, Low in fat';
 				this.item3.appendChild(this.itemDesc);
 			},
 			menuItem4: function () {

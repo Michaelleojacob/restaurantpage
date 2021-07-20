@@ -20,7 +20,7 @@ export default function header() {
 			},
 			restaurantName: function () {
 				this.restname = document.createElement('div');
-				this.restname.textContent = 'Butter Toast';
+				this.restname.textContent = 'Ponce de la Eds';
 				this.restname.classList.add('btoast');
 				this.hwrapper.appendChild(this.restname);
 			},
