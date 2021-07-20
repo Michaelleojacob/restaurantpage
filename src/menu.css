@@ -1,10 +1,9 @@
 .mwrapper {
 	display: flex;
 	flex-wrap: wrap;
-	height: 67%;
-	max-height: 650px;
 	justify-content: center;
 	margin-top: 1vh;
+	margin-bottom: 5%;
 }
 .mwrapper > div {
 	/* flex: 0 45%; */
@@ -15,12 +14,14 @@
 
 .itemCard {
 	width: 100%;
-}
-/* 
-.itemCard {
+	height: 200px;
 	display: flex;
-	height: 20vh;
-	width: 20vh;
-	background: rgba(100, 148, 237, 0.425);
-	margin: 0.5vh;
-} */
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.imgicon {
+	max-height: 100%;
+	max-width: 100%;
+}

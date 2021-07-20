@@ -1,4 +1,5 @@
 import './menu.css';
+import pancakes from './ededdneddy/pancakes.jpg';
 
 export default function myMenu() {
 	'use strict';
@@ -18,6 +19,16 @@ export default function myMenu() {
 				this.renderCards();
 			},
 			renderCards: function () {
+				this.menuItem1();
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
 				this.makeItemCard();
 				this.makeItemCard();
 				this.makeItemCard();
@@ -30,7 +41,15 @@ export default function myMenu() {
 				this.itemCard.classList.add('itemCard');
 				this.mwrapper.appendChild(this.itemCard);
 			},
-			makeIcon: function () {},
+			menuItem1: function () {
+				this.item1 = document.createElement('div');
+				this.item1.classList.add('itemCard', 'item1');
+				this.mwrapper.appendChild(this.item1);
+				this.icon = new Image();
+				this.icon.classList.add('imgicon');
+				this.icon.src = pancakes;
+				this.item1.appendChild(this.icon);
+			},
 		};
 		menu.init();
 	})();
