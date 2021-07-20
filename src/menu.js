@@ -17,7 +17,14 @@ export default function myMenu() {
 				this.content.appendChild(this.mwrapper);
 				this.renderCards();
 			},
-			renderCards: function () {},
+			renderCards: function () {
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
+				this.makeItemCard();
+			},
 			makeItemCard: function () {
 				this.itemCard = document.createElement('div');
 				this.itemCard.classList.add('itemCard');

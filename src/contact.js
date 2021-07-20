@@ -26,13 +26,13 @@ export default function contactMe() {
 			divone: function () {
 				this.phone = document.createElement('div');
 				this.phone.classList.add('phone');
-				this.phone.textContent = `Phone: 012-345-6789`;
+				this.phone.textContent = `Phone: 123-456-7890`;
 				this.conwrapper.appendChild(this.phone);
 			},
 			divtwo: function () {
 				this.address = document.createElement('div');
 				this.address.classList.add('address');
-				this.address.textContent = `Address: Cartoon Network`;
+				this.address.textContent = `Address: 220 Rethink Avenue`;
 				this.conwrapper.appendChild(this.address);
 			},
 			imageOfCuldesac: function () {
