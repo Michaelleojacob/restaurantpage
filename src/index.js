@@ -48,6 +48,5 @@ header();
 	};
 	handleRender.init();
 })();
-// about();
-menu();
+about();
 footer();
