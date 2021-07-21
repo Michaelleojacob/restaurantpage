@@ -1,4 +1,6 @@
 #content {
+	height: 98vh;
+	overflow: auto;
 	display: flex;
 	flex-flow: column nowrap;
 	background: linear-gradient(
@@ -10,6 +12,6 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-attachment: local;
+	background-attachment: fixed;
 	background-position: center;
 }
