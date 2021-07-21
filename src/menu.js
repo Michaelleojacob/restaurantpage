@@ -31,107 +31,55 @@ export default function myMenu() {
 				this.menuItem5();
 				this.menuItem6();
 			},
-			menuItem1: function () {
-				this.item1 = document.createElement('div');
-				this.item1.classList.add('itemCard', 'item1');
-				this.mwrapper.appendChild(this.item1);
+			menuItem: function (itemNum, title, image, desc) {
+				this.itemNum = document.createElement('div');
+				this.itemNum.classList.add('itemCard', itemNum);
+				this.mwrapper.appendChild(this.itemNum);
 				this.itemtitle = document.createElement('div');
 				this.itemtitle.classList.add('title');
-				this.itemtitle.textContent = 'Ketchup Pancakes';
-				this.item1.appendChild(this.itemtitle);
+				this.itemtitle.textContent = title;
+				this.itemNum.appendChild(this.itemtitle);
 				this.icon = new Image();
 				this.icon.classList.add('imgicon');
-				this.icon.src = pancakes;
-				this.item1.appendChild(this.icon);
+				this.icon.src = image;
+				this.itemNum.appendChild(this.icon);
 				this.itemDesc = document.createElement('div');
 				this.itemDesc.classList.add('itemDesc');
-				this.itemDesc.textContent = 'Pancakes with ketchup';
-				this.item1.appendChild(this.itemDesc);
+				this.itemDesc.textContent = desc;
+				this.itemNum.appendChild(this.itemDesc);
+			},
+			menuItem1: function () {
+				this.menuItem(
+					'item1',
+					'Ketchup Pancakes',
+					pancakes,
+					'Pancakes with ketchup'
+				);
 			},
 			menuItem2: function () {
-				this.item2 = document.createElement('div');
-				this.item2.classList.add('itemCard', 'item2');
-				this.mwrapper.appendChild(this.item2);
-				this.itemtitle = document.createElement('div');
-				this.itemtitle.classList.add('title');
-				this.itemtitle.textContent = 'The Kanker Burger';
-				this.item2.appendChild(this.itemtitle);
-				this.icon = new Image();
-				this.icon.classList.add('imgicon');
-				this.icon.src = nasty;
-				this.item2.appendChild(this.icon);
-				this.itemDesc = document.createElement('div');
-				this.itemDesc.classList.add('itemDesc');
-				this.itemDesc.textContent = 'Greasy, overflowing with sauce';
-				this.item2.appendChild(this.itemDesc);
+				this.menuItem(
+					'item2',
+					'The Kanker Burger',
+					nasty,
+					'Greasy, overflowing with sauce'
+				);
 			},
 			menuItem3: function () {
-				this.item3 = document.createElement('div');
-				this.item3.classList.add('itemCard', 'item3');
-				this.mwrapper.appendChild(this.item3);
-				this.itemtitle = document.createElement('div');
-				this.itemtitle.classList.add('title');
-				this.itemtitle.textContent = 'Chunky Puffs';
-				this.item3.appendChild(this.itemtitle);
-				this.icon = new Image();
-				this.icon.classList.add('imgicon');
-				this.icon.src = chunky;
-				this.item3.appendChild(this.icon);
-				this.itemDesc = document.createElement('div');
-				this.itemDesc.classList.add('itemDesc');
-				this.itemDesc.textContent = 'Cereal, Low in fat';
-				this.item3.appendChild(this.itemDesc);
+				this.menuItem('item3', 'Chunky Puffs', chunky, 'Cereal, low in fat');
 			},
 			menuItem4: function () {
-				this.item4 = document.createElement('div');
-				this.item4.classList.add('itemCard', 'item4');
-				this.mwrapper.appendChild(this.item4);
-				this.itemtitle = document.createElement('div');
-				this.itemtitle.classList.add('title');
-				this.itemtitle.textContent = 'Jujubes';
-				this.item4.appendChild(this.itemtitle);
-				this.icon = new Image();
-				this.icon.classList.add('imgicon');
-				this.icon.src = jujubee;
-				this.item4.appendChild(this.icon);
-				this.itemDesc = document.createElement('div');
-				this.itemDesc.classList.add('itemDesc');
-				this.itemDesc.textContent = 'Chewy candy';
-				this.item4.appendChild(this.itemDesc);
+				this.menuItem('item4', 'Jujube', jujubee, 'Chewy candy');
 			},
 			menuItem5: function () {
-				this.item5 = document.createElement('div');
-				this.item5.classList.add('itemCard', 'item5');
-				this.mwrapper.appendChild(this.item5);
-				this.itemtitle = document.createElement('div');
-				this.itemtitle.classList.add('title');
-				this.itemtitle.textContent = 'Fudge';
-				this.item5.appendChild(this.itemtitle);
-				this.icon = new Image();
-				this.icon.classList.add('imgicon');
-				this.icon.src = fudge;
-				this.item5.appendChild(this.icon);
-				this.itemDesc = document.createElement('div');
-				this.itemDesc.classList.add('itemDesc');
-				this.itemDesc.textContent = 'Chocolate candy treat';
-				this.item5.appendChild(this.itemDesc);
+				this.menuItem('item5', 'Fudge', fudge, 'Chocolate candy treat');
 			},
 			menuItem6: function () {
-				this.item6 = document.createElement('div');
-				this.item6.classList.add('itemCard', 'item6');
-				this.mwrapper.appendChild(this.item6);
-				this.itemtitle = document.createElement('div');
-				this.itemtitle.classList.add('title');
-				this.itemtitle.textContent = 'Jawbreakers';
-				this.item6.appendChild(this.itemtitle);
-				this.icon = new Image();
-				this.icon.classList.add('imgicon');
-				this.icon.src = jawbreaker;
-				this.item6.appendChild(this.icon);
-				this.itemDesc = document.createElement('div');
-				this.itemDesc.classList.add('itemDesc');
-				this.itemDesc.textContent = 'Sold out indefinitely';
-				this.item6.appendChild(this.itemDesc);
+				this.menuItem(
+					'item6',
+					'Jawbreaker',
+					jawbreaker,
+					'Sold out indefinitely'
+				);
 			},
 		};
 		menu.init();
